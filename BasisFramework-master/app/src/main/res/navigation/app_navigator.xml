@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test_navi"
+    app:startDestination="@id/mainActivity">
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="com.iwhalecloud.mobile.basisframework.app.fragment.FragmentA"
+        android:label="fragmentA"
+        tools:layout="@layout/fragmenta">
+
+        <action
+            android:id="@+id/action_fragmentA_to_userInfoActivity"
+            app:destination="@id/userInfoActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/userInfoActivity"
+        android:name="com.iwhalecloud.mobile.basisframework.userinfo.ui.UserInfoActivity"
+        android:label="activity_user_info"
+        tools:layout="@layout/activity_user_info" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.iwhalecloud.mobile.basisframework.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+
+
+</navigation>
